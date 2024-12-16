@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-y0wv@2bunyu-*=1p%@*^$90o!mrn0^h)v4kibb%@kf*13*j!4u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# settings.py
+
+ALLOWED_HOSTS = ['questionnaireback.netlify.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -49,7 +51,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',  # Адрес вашего фронтенда
+    'http://localhost:3000',
+       "https://questionnairefront.netlify.app",    # Адрес вашего фронтенда
 ]
 
 
